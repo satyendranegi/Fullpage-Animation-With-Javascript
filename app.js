@@ -9,9 +9,11 @@ new fullpage('#fullpage',{
         if(destination.index === 1){
             const nature = document.querySelectorAll(".nature");
             const description = document.querySelector(".description");
+            const home = document.querySelector(".home");
 
             tl.fromTo(nature, 0.7, { x: "100%"}, {x: "-35%"})
             .fromTo(description, 0.5, { y: "50", opacity: 0}, {y: 0, opacity: 1})
+            .fromTo(home, 0.5, { y: "50", opacity: 0}, {y: 0, opacity: 1})
             .fromTo(nature[0], 1, { opacity: 1 },{ opacity: 1 })
             .fromTo(nature[1], 1, { opacity: 0 },{ opacity: 1 })
             .fromTo(nature[2], 1, { opacity: 0 },{ opacity: 1 })
